@@ -26,8 +26,17 @@ public class Main {
         ids.add(3);
         ids.add(4);
 
+//5.	Create a variable int i = 0; then iterate over ids using an enhanced for loop.
+//     Inside the enhanced for loop use employeeMap.put() to add a new entry to the map.
+//    The entry should consist of a key that is the id in the enhanced loop’s current iteration,
+//   and a value that is the employeeName at position i of the employeeNames ArrayList.
+//  Increment i so that each iteration grabs the next element in the ArrayList.
 
-
-
+        int i = 0;
+        for (Integer key : ids) {
+            i = key;
+            employeeMap.put(key, employeeNames.get(key));
+        }
+        System.out.println(employeeMap);
     }
 }
