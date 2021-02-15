@@ -58,9 +58,9 @@ public class Main {
 
         for (Integer id : ids) {
             int last = ids.size() - 1;
-            if (id != last){
+            if (id != last) {
                 idsBuilder.append(id + "-");
-            } else{
+            } else {
                 idsBuilder.append(id);
             }
         }
@@ -75,8 +75,12 @@ public class Main {
         //11.	Iterate over the employeeNames ArrayList and append each name,
         //       followed by a space “ “ to the namesBuilder.
 
+        for (String names : employeeNames) {
+            namesBuilder.append(names + " ");
+        }
 
         //12.	Print the result of namesBuilder.toString() to the console.
+        System.out.println(namesBuilder.toString());
 
 
     }
