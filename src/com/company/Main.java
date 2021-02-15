@@ -56,16 +56,17 @@ public class Main {
         //8.	Iterate over the ids HashSet and append each id,
         //      followed by a dash “-“ to idsBuilder.
 
-        for (Integer id : ids){
-
-            idsBuilder.append(id + "-");
+        for (Integer id : ids) {
+            int last = ids.size() - 1;
+            if (id != last){
+                idsBuilder.append(id + "-");
+            } else{
+                idsBuilder.append(id);
+            }
         }
 
-        System.out.println(idsBuilder.toString());
-
-
         //9.	Print the result of idsBuilder.toString() to the console.
-
+        System.out.println(idsBuilder.toString());
 
         //10.	Create another StringBuilder called namesBuilder.
 
