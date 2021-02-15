@@ -56,6 +56,13 @@ public class Main {
         //8.	Iterate over the ids HashSet and append each id,
         //      followed by a dash “-“ to idsBuilder.
 
+        for (Integer id : ids){
+
+            idsBuilder.append(id + "-");
+        }
+
+        System.out.println(idsBuilder.toString());
+
 
         //9.	Print the result of idsBuilder.toString() to the console.
 
