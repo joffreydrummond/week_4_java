@@ -69,6 +69,7 @@ public class Main {
         System.out.println(idsBuilder.toString());
 
         //10.	Create another StringBuilder called namesBuilder.
+        StringBuilder namesBuilder = new StringBuilder();
 
 
         //11.	Iterate over the employeeNames ArrayList and append each name,
