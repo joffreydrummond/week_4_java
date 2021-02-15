@@ -38,5 +38,35 @@ public class Main {
             employeeMap.put(key, employeeNames.get(key));
         }
         System.out.println(employeeMap);
+
+
+        //6.	Once the employeeMap is fully populated, use another enhanced for loop
+        // to iterate over the employeeMap.keySet(), and use the key for each current iteration
+        // to print to the console both the current key and its associated value in the map.
+
+        for (Integer key : employeeMap.keySet()) {
+            System.out.println(key + "=" + employeeMap.get(key));
+        }
+
+
+        //7.	Create a StringBuilder called idsBuilder.
+
+        //8.	Iterate over the ids HashSet and append each id,
+        //      followed by a dash “-“ to idsBuilder.
+
+
+        //9.	Print the result of idsBuilder.toString() to the console.
+
+
+        //10.	Create another StringBuilder called namesBuilder.
+
+
+        //11.	Iterate over the employeeNames ArrayList and append each name,
+        //       followed by a space “ “ to the namesBuilder.
+
+
+        //12.	Print the result of namesBuilder.toString() to the console.
+
+
     }
 }
